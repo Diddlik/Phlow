@@ -9,22 +9,16 @@
         x:DataType="vm:AboutViewModel"
         Title="About Phlow"
         Width="460" Height="480"
-        CanMinimize="False" CanResize="False">
+        CanMinimize="False" CanResize="False"
+        WindowStartupLocation="CenterOwner">
 
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <StackPanel Margin="32" Spacing="20">
 
-            <!-- App Icon Placeholder -->
-            <Border Width="80" Height="80"
-                    CornerRadius="16"
-                    Background="{DynamicResource SukiCardBackground}"
-                    BorderBrush="{DynamicResource ThemeBorderMidBrush}"
-                    BorderThickness="1"
-                    HorizontalAlignment="Center">
-                <TextBlock Text="P" FontSize="40" FontWeight="Bold"
-                           HorizontalAlignment="Center" VerticalAlignment="Center"
-                           Opacity="0.6"/>
-            </Border>
+            <!-- App Logo -->
+            <Image Source="{StaticResource PhlowLogo}"
+                   Width="80" Height="80"
+                   HorizontalAlignment="Center"/>
 
             <!-- App Name & Version -->
             <StackPanel Spacing="4" HorizontalAlignment="Center">

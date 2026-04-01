@@ -47,7 +47,10 @@
                 <!-- Camera Section -->
                 <Border Background="#f8fafc" CornerRadius="8" Padding="12">
                     <StackPanel Spacing="8">
-                        <TextBlock Text="📷 Camera" FontWeight="SemiBold" FontSize="14"/>
+                        <StackPanel Orientation="Horizontal" Spacing="6">
+                            <PathIcon Data="{StaticResource IconCamera}" Width="14" Height="14"/>
+                            <TextBlock Text="Camera" FontWeight="SemiBold" FontSize="14"/>
+                        </StackPanel>
                         <Grid ColumnDefinitions="120,*" RowDefinitions="Auto,Auto,Auto">
                             <TextBlock Grid.Row="0" Grid.Column="0" Text="Camera:" Opacity="0.6"/>
                             <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding CameraInfo, TargetNullValue='-'}"/>
@@ -64,7 +67,10 @@
                 <!-- Exposure Section -->
                 <Border Background="#f8fafc" CornerRadius="8" Padding="12">
                     <StackPanel Spacing="8">
-                        <TextBlock Text="⚡ Exposure" FontWeight="SemiBold" FontSize="14"/>
+                        <StackPanel Orientation="Horizontal" Spacing="6">
+                            <PathIcon Data="{StaticResource IconExposure}" Width="14" Height="14"/>
+                            <TextBlock Text="Exposure" FontWeight="SemiBold" FontSize="14"/>
+                        </StackPanel>
                         <Grid ColumnDefinitions="120,*" RowDefinitions="Auto,Auto,Auto,Auto">
                             <TextBlock Grid.Row="0" Grid.Column="0" Text="Date/Time:" Opacity="0.6"/>
                             <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding CaptureDateTime, TargetNullValue='-'}"/>
@@ -84,7 +90,10 @@
                 <!-- GPS Section -->
                 <Border Background="#f8fafc" CornerRadius="8" Padding="12">
                     <StackPanel Spacing="8">
-                        <TextBlock Text="📍 GPS Location" FontWeight="SemiBold" FontSize="14"/>
+                        <StackPanel Orientation="Horizontal" Spacing="6">
+                            <PathIcon Data="{StaticResource IconMapMarker}" Width="14" Height="14"/>
+                            <TextBlock Text="GPS Location" FontWeight="SemiBold" FontSize="14"/>
+                        </StackPanel>
                         <Grid ColumnDefinitions="120,*" RowDefinitions="Auto,Auto">
                             <TextBlock Grid.Row="0" Grid.Column="0" Text="Coordinates:" Opacity="0.6"/>
                             <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding GpsCoordinates, TargetNullValue='-'}"/>
@@ -98,7 +107,10 @@
                 <!-- Copyright Section -->
                 <Border Background="#f8fafc" CornerRadius="8" Padding="12">
                     <StackPanel Spacing="8">
-                        <TextBlock Text="©️ Copyright" FontWeight="SemiBold" FontSize="14"/>
+                        <StackPanel Orientation="Horizontal" Spacing="6">
+                            <PathIcon Data="{StaticResource IconCopyright}" Width="14" Height="14"/>
+                            <TextBlock Text="Copyright" FontWeight="SemiBold" FontSize="14"/>
+                        </StackPanel>
                         <Grid ColumnDefinitions="120,*" RowDefinitions="Auto,Auto,Auto">
                             <TextBlock Grid.Row="0" Grid.Column="0" Text="Artist:" Opacity="0.6"/>
                             <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Artist, TargetNullValue='-'}"/>

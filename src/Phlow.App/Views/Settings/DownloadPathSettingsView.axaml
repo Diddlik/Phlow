@@ -27,8 +27,13 @@
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
                     </ComboBox>
-                    <Button Grid.Column="1" Content="🗑 Delete" Classes="Flat"
-                            Command="{Binding DeleteSelectedProfileCommand}"/>
+                    <Button Grid.Column="1" Classes="Flat"
+                            Command="{Binding DeleteSelectedProfileCommand}">
+                        <StackPanel Orientation="Horizontal" Spacing="4">
+                            <PathIcon Data="{StaticResource IconDelete}" Width="14" Height="14"/>
+                            <TextBlock Text="Delete"/>
+                        </StackPanel>
+                    </Button>
                 </Grid>
             </StackPanel>
         </suki:GlassCard>
@@ -76,7 +81,7 @@
                         IsVisible="{Binding !IsSavingToProfile}"
                         Command="{Binding SaveToProfileCommand}">
                     <StackPanel Orientation="Horizontal" Spacing="6">
-                        <TextBlock Text="💾" FontSize="14"/>
+                        <PathIcon Data="{StaticResource IconSave}" Width="14" Height="14"/>
                         <TextBlock Text="Save as New Profile" FontWeight="SemiBold"/>
                     </StackPanel>
                 </Button>

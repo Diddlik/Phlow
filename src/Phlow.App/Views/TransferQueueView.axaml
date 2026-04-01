@@ -50,7 +50,7 @@
             <suki:GlassCard>
                 <Grid RowDefinitions="Auto,Auto">
                     <StackPanel Orientation="Horizontal" Spacing="12" Margin="0,0,0,8">
-                        <TextBlock Text="📅" FontSize="14"/>
+                        <PathIcon Data="{StaticResource IconCalendar}" Width="14" Height="14"/>
                         <TextBlock Text="Select by Date" FontWeight="SemiBold" FontSize="12"/>
                         <Button Content="All" Command="{Binding SelectAllDatesCommand}"
                                 Classes="Flat" FontSize="10" Padding="8,4"/>
@@ -114,7 +114,7 @@
         <suki:GlassCard Grid.Row="2" Margin="0,0,0,12">
             <Grid ColumnDefinitions="Auto,*,Auto">
                 <StackPanel Orientation="Horizontal" Spacing="6">
-                    <TextBlock Text="🔍" FontSize="12" VerticalAlignment="Center"/>
+                    <PathIcon Data="{StaticResource IconSearch}" Width="12" Height="12" VerticalAlignment="Center"/>
                     <TextBox Text="{Binding SearchText}" Watermark="Search files..." 
                              Width="200" FontSize="12"/>
                 </StackPanel>
@@ -154,7 +154,7 @@
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" Spacing="6" Margin="6,0">
-                                    <TextBlock Text="🖼" FontSize="12"/>
+                                    <PathIcon Data="{StaticResource IconImage}" Width="12" Height="12"/>
                                     <TextBlock Text="{Binding FileName}" VerticalAlignment="Center" FontSize="12"/>
                                 </StackPanel>
                             </DataTemplate>
