@@ -9,7 +9,7 @@
         x:Class="Phlow.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Title="Phlow"
-        Icon="avares://Phlow/Assets/phlow-icon.png"
+        Icon="avares://Phlow/Assets/phlow-icon.ico"
         Width="1920" Height="1080"
         MinWidth="1280" MinHeight="720">
 
